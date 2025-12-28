@@ -122,6 +122,8 @@ A INFINITE SCROLL PATTERN
 You may adapt this pattern (or similar) to your Playwright skill:
 
 ```python
+from playwright.sync_api import sync_playwright
+
 def scroll_until_stable(page, max_scroll_loops: int = 50, idle_loops: int = 3) -> None:
     """
     Scrolls to the bottom repeatedly until the page height stops changing
