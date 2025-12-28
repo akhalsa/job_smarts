@@ -1,0 +1,10 @@
+playwright
+beautifulsoup4
+mcp 
+openai
+fastmcp
+langchain_core
+langchain-openai
+langchain_mcp_adapters
+langchain
+Path
