@@ -92,26 +92,14 @@ def extract_company_name(page: Page, company_slug: str) -> str:
     html = page.content()
     soup = BeautifulSoup(html, "html.parser")
 
-    # Strategy 1: Breadcrumb navigation
-    nav_links = soup.select("nav a, .breadcrumb a")
-    for link in nav_links:
-        text = link.get_text(" ", strip=True)
-        href = link.get("href")
-        if href and isinstance(href, str) and f"/jobs/{company_slug}" in href:
-            if text and text not in ["Companies", "Jobs", "USV"]:
-                return text
+    # Extract company name from tested selector
+    header = soup.select_one(".board-company-header h1")
+    if not header:
+        raise ValueError(f"Could not find company header for {company_slug}")
 
-    # Strategy 2: H1/H2 with prefix stripping
-    for heading in soup.select("h1, h2"):
-        text = heading.get_text(" ", strip=True)
-        if text and len(text) < 100:
-            for prefix in ["Careers at ", "Jobs at ", "Work at "]:
-                if text.startswith(prefix):
-                    text = text[len(prefix):]
-            return text
+    company_name = header.get_text(strip=True).replace("Careers at ", "")
+    return company_name
 
-    # Fallback: Format slug nicely
-    return company_slug.replace("-", " ").title()
 
 
 # ---------------------------------------------------------------------------
