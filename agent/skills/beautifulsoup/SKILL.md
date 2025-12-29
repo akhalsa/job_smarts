@@ -1,3 +1,8 @@
+---
+name: beautifulsoup
+description: A Python library for parsing HTML and XML documents. Use it to extract data from HTML strings using CSS selectors and navigation methods.
+---
+
 # Beautiful Soup 4 Quickstart (No Installation Section)
 
 Beautiful Soup is a Python library for extracting data from HTML and XML. It turns markup into a structured parse tree so you can navigate, search, and modify it using Pythonic syntax. It works with Python’s built-in parser or third-party parsers like `lxml` and `html5lib`.
