@@ -2,4 +2,4 @@ venv/*
 agent/logs/*
 agent/workspace/*
 agent/jobs.jsonl
-agent/tools/__pycache__/*
+agent/skills/examples/infinite_scroll_usv/__pycache__/*
