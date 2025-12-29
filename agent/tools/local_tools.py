@@ -5,44 +5,48 @@ from langchain_core.tools import tool  # or from langchain.tools import tool
 from datetime import date
 import json
 import os
+import re
 from datetime import datetime
 from pathlib import Path
 
 @tool
-def run_python_script(path: str) -> str:
+def run_python_script(script_file_name: str) -> str:
     """Run a Python file with the current interpreter.
     
-    Execution logs are saved to: agent/logs/{script_name}_{timestamp}.log
+    Execution logs are saved to: agent/workspace/logs/{script_name}_{timestamp}.log
     
     Input:
-        path: Absolute or agent-relative path to a .py file.
+        script_file_name: name of a script in the workspace folder. i.e. retrieve_jobs.py
     Output:
         Captured stdout/stderr and the return code.
     """
-    from datetime import datetime
-    import os
-    
-    # Create logs directory
-    log_dir = Path(__file__).parent.parent / "logs"
+    # Build paths
+    project_root = Path(__file__).parent.parent
+    log_dir = project_root / "agent" / "workspace" / "logs"
     log_dir.mkdir(exist_ok=True)
-    
-    # Generate log filename
-    script_name = Path(path).stem
+    script_name = re.sub(r"\.py$", "", script_file_name)
+    module_name = f"agent.workspace.{script_name}"
+
+
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     log_file = log_dir / f"{script_name}_{timestamp}.log"
     
+    
+    
     try:
         result = subprocess.run(
-            [sys.executable, path],
+            [sys.executable, "-m", module_name],
             capture_output=True,
             text=True,
             timeout=120,
+            cwd=str(project_root)
         )
         
         # Format output
         log_content = [
             f"=" * 60,
-            f"Script: {path}",
+            f"Script: {script_file_name}",
+            f"Script Executed With: python -m {module_name}"
             f"Executed: {datetime.now().isoformat()}",
             f"Return Code: {result.returncode}",
             f"=" * 60,
@@ -71,7 +75,7 @@ def run_python_script(path: str) -> str:
         return "\n".join(out)
         
     except Exception as e:
-        error_msg = f"Error running {path}: {e!r}"
+        error_msg = f"Error running {script_file_name}: {e!r}"
         # Still try to log the error
         with open(log_file, 'w') as f:
             f.write(f"EXECUTION ERROR\n{error_msg}\n")
