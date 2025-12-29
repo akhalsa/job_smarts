@@ -21,32 +21,35 @@ def run_python_script(script_file_name: str) -> str:
         Captured stdout/stderr and the return code.
     """
     # Build paths
-    project_root = Path(__file__).parent.parent
-    log_dir = project_root / "agent" / "workspace" / "logs"
+    # NOTE: project_root must be repo root so `python -m agent.workspace.xxx` works.
+    # __file__ is agent/tools/local_tools.py, so we need to go up 2 levels to repo root.
+    project_root = Path(__file__).resolve().parents[2]
+    log_dir = project_root / "agent"/ "workspace" / "logs"
     log_dir.mkdir(exist_ok=True)
     script_name = re.sub(r"\.py$", "", script_file_name)
-    module_name = f"agent.workspace.{script_name}"
-
+    script_path = project_root / "agent"/ "workspace" / script_file_name
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     log_file = log_dir / f"{script_name}_{timestamp}.log"
     
-    
+    env = os.environ.copy()
+    env['PYTHONPATH'] = str(project_root)
     
     try:
         result = subprocess.run(
-            [sys.executable, "-m", module_name],
+            [sys.executable, script_path],
             capture_output=True,
             text=True,
             timeout=120,
-            cwd=str(project_root)
+            cwd=str(project_root),
+            env=env
         )
         
         # Format output
         log_content = [
             f"=" * 60,
             f"Script: {script_file_name}",
-            f"Script Executed With: python -m {module_name}"
+            f"Script Executed With: python {script_path}",
             f"Executed: {datetime.now().isoformat()}",
             f"Return Code: {result.returncode}",
             f"=" * 60,
