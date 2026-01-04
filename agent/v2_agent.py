@@ -6,7 +6,8 @@ from langchain.agents import create_agent
 from langchain_openai import ChatOpenAI  # or Anthropic, etc.
 from tools.local_tools import run_python_script 
 
-openai_api_key = "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"
+openai_api_key = "YOUR OPENAI KEY HERE"
+
 os.environ["OPENAI_API_KEY"] = openai_api_key
 
 FS_CONFIG = {
