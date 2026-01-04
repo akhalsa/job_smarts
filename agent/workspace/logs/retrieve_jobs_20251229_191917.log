@@ -1,0 +1,145 @@
+============================================================
+Script: retrieve_jobs.py
+Script Executed With: python agent/workspace/retrieve_jobs.py
+Executed: 2025-12-29T19:22:05.770529
+Return Code: -2
+============================================================
+
+--- STDOUT ---
+[scroll] round=1 unique_job_urls=21
+[scroll] round=2 unique_job_urls=21
+[scroll] round=3 unique_job_urls=45
+[scroll] round=4 unique_job_urls=45
+[scroll] round=5 unique_job_urls=72
+[scroll] round=6 unique_job_urls=72
+[scroll] round=7 unique_job_urls=99
+[scroll] round=8 unique_job_urls=99
+[scroll] round=9 unique_job_urls=117
+[scroll] round=10 unique_job_urls=117
+[scroll] round=11 unique_job_urls=138
+[scroll] round=12 unique_job_urls=138
+[scroll] round=13 unique_job_urls=159
+[scroll] round=14 unique_job_urls=159
+[scroll] round=15 unique_job_urls=174
+[scroll] round=16 unique_job_urls=174
+[scroll] round=17 unique_job_urls=192
+[scroll] round=18 unique_job_urls=192
+[scroll] round=19 unique_job_urls=210
+[scroll] round=20 unique_job_urls=210
+[scroll] round=21 unique_job_urls=233
+[scroll] round=22 unique_job_urls=233
+[scroll] round=23 unique_job_urls=254
+[scroll] round=24 unique_job_urls=254
+[scroll] round=25 unique_job_urls=269
+[scroll] round=26 unique_job_urls=269
+[scroll] round=27 unique_job_urls=280
+[scroll] round=28 unique_job_urls=280
+[scroll] round=29 unique_job_urls=300
+[scroll] round=30 unique_job_urls=300
+[scroll] round=31 unique_job_urls=300
+[scroll] round=32 unique_job_urls=318
+[scroll] round=33 unique_job_urls=318
+[scroll] round=34 unique_job_urls=318
+[scroll] round=35 unique_job_urls=342
+[scroll] round=36 unique_job_urls=342
+[scroll] round=37 unique_job_urls=342
+[scroll] round=38 unique_job_urls=356
+[scroll] round=39 unique_job_urls=356
+[scroll] round=40 unique_job_urls=356
+[scroll] round=41 unique_job_urls=362
+[scroll] round=42 unique_job_urls=362
+[scroll] round=43 unique_job_urls=362
+[scroll] round=44 unique_job_urls=368
+[scroll] round=45 unique_job_urls=368
+[scroll] round=46 unique_job_urls=368
+[scroll] round=47 unique_job_urls=370
+[scroll] round=48 unique_job_urls=370
+[scroll] round=49 unique_job_urls=370
+[scroll] round=50 unique_job_urls=372
+[scroll] round=51 unique_job_urls=372
+[scroll] round=52 unique_job_urls=376
+[scroll] round=53 unique_job_urls=376
+[scroll] round=54 unique_job_urls=376
+[scroll] round=55 unique_job_urls=376
+[scroll] round=56 unique_job_urls=376
+[scroll] round=57 unique_job_urls=376
+Discovered external job URLs: 376
+[1/376] visiting https://boards.greenhouse.io/boldmetrics/jobs/4469962005?gh_jid=4469962005
+✓ Job saved: Machine Learning Engineer (Data Scientist) at Bold Metrics Logo
+[2/376] visiting https://boards.greenhouse.io/manychat/jobs/8325298002?gh_jid=8325298002
+✓ Job saved: Senior Business analyst at Manychat Logo
+[3/376] visiting https://boards.greenhouse.io/manychat/jobs/8325301002?gh_jid=8325301002
+✓ Job saved: Senior Business analyst at Manychat Logo
+[4/376] visiting https://boards.greenhouse.io/manychat/jobs/8340296002?gh_jid=8340296002
+✓ Job saved: HR Administrator / HRA at Manychat Logo
+[5/376] visiting https://boards.greenhouse.io/shopmonkey/jobs/7546649003?gh_jid=7546649003
+✓ Job saved: Customer Support Representative at Armenia
+[6/376] visiting https://boards.greenhouse.io/shopmonkey/jobs/7561771003?gh_jid=7561771003
+✓ Job saved: Implementation Manager at Shopmonkey Logo
+[7/376] visiting https://boards.greenhouse.io/shopmonkey/jobs/7565400003?gh_jid=7565400003
+✓ Job saved: Manager, Sales Development at Shopmonkey Logo
+[8/376] visiting https://boards.greenhouse.io/turquoisehealth/jobs/4601361006?gh_jid=4601361006
+✓ Job saved: Senior Software Engineer at Turquoise Health Logo
+[9/376] visiting https://boards.greenhouse.io/turquoisehealth/jobs/4609767006?gh_jid=4609767006
+✓ Job saved: Enterprise Account Executive, Life Sciences at Turquoise Health Logo
+[10/376] visiting https://boards.greenhouse.io/turquoisehealth/jobs/4627390006?gh_jid=4627390006
+✓ Job saved: Implementation Associate at Turquoise Health Logo
+[11/376] visiting https://boards.greenhouse.io/watershed/jobs/4254074003?gh_jid=4254074003
+  - skip (no company identified)
+[12/376] visiting https://boards.greenhouse.io/watershed/jobs/5975769003?gh_jid=5975769003
+  - skip (no company identified)
+[13/376] visiting https://boards.greenhouse.io/watershed/jobs/6216631003?gh_jid=6216631003
+  - skip (no company identified)
+[14/376] visiting https://careers-groupsrecovertogether.icims.com/jobs/6770/recovery-support-coordinator/job
+✓ Job saved: Careers | Suboxone and Support | Groups Recover Together at Join Groups
+[15/376] visiting https://careers-groupsrecovertogether.icims.com/jobs/6792/recovery-support-coordinator/job
+✓ Job saved: Careers | Suboxone and Support | Groups Recover Together at Join Groups
+[16/376] visiting https://careers-groupsrecovertogether.icims.com/jobs/6794/admissions-counselor/job
+✓ Job saved: Careers | Suboxone and Support | Groups Recover Together at Join Groups
+[17/376] visiting https://careers-mambu.icims.com/jobs/3323/senior-software-engineer/job
+✓ Job saved: Careers at Mambu
+[18/376] visiting https://careers-mambu.icims.com/jobs/3353/senior-account-executive-%28channel%29/job
+✓ Job saved: Careers at Mambu
+[19/376] visiting https://careers-mambu.icims.com/jobs/3357/senior-technical-account-manager/job
+✓ Job saved: Careers at Mambu
+[20/376] visiting https://easebuzz.hire.trakstar.com/jobs/fk0zmi4/
+✓ Job saved: Associate Vice President at Legal at Easebuzz Pvt Ltd
+[21/376] visiting https://easebuzz.hire.trakstar.com/jobs/fk0zmwj/
+✓ Job saved: Senior Manager at Merchant Underwriter at Easebuzz Pvt Ltd
+[22/376] visiting https://easebuzz.hire.trakstar.com/jobs/fk0zmww/
+  - skip (no company identified)
+[23/376] visiting https://job-boards.eu.greenhouse.io/unframe/jobs/4739155101
+✓ Job saved: AI Product Manager at Unframe Logo
+[24/376] visiting https://job-boards.eu.greenhouse.io/unframe/jobs/4741952101
+✓ Job saved: Senior Manager, Sales Enablement at Unframe Logo
+[25/376] visiting https://job-boards.eu.greenhouse.io/unframe/jobs/4744936101
+✓ Job saved: Senior Frontend Developer at Unframe Logo
+[26/376] visiting https://job-boards.greenhouse.io/acryldata/jobs/4726101007
+
+
+--- STDERR ---
+Traceback (most recent call last):
+  File "/Users/akhalsa/Documents/job_smarts/agent/workspace/retrieve_jobs.py", line 184, in <module>
+    main()
+  File "/Users/akhalsa/Documents/job_smarts/agent/workspace/retrieve_jobs.py", line 158, in main
+    page.goto(job_url, wait_until="domcontentloaded", timeout=60000)
+  File "/Users/akhalsa/Documents/job_smarts/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 9050, in goto
+    self._sync(
+  File "/Users/akhalsa/Documents/job_smarts/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 113, in _sync
+    self._dispatcher_fiber.switch()
+  File "/Users/akhalsa/Documents/job_smarts/venv/lib/python3.12/site-packages/playwright/sync_api/_context_manager.py", line 56, in greenlet_main
+    self._loop.run_until_complete(self._connection.run_as_sync())
+  File "/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+  File "/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+  File "/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 1948, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/lib/python3.12/selectors.py", line 566, in select
+    kev_list = self._selector.control(None, max_ev, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed

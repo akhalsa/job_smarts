@@ -1,0 +1,56 @@
+============================================================
+Script: scratch1.py
+Script Executed With: python agent/workspace/scratch1.py
+Executed: 2025-12-29T19:15:40.407723
+Return Code: 0
+============================================================
+
+--- STDOUT ---
+Total links: 239
+Candidate job links: 53
+/jobs/litify
+https://job-boards.greenhouse.io/litify/jobs/7504463
+https://job-boards.greenhouse.io/litify/jobs/7215673
+https://job-boards.greenhouse.io/litify/jobs/7300533
+/jobs/team8
+https://www.comeet.com/jobs/team8/61.003/40seas-gtm-engineer-demand-generation-and-marketing-automation/80.36B
+https://www.comeet.com/jobs/team8/61.003/team8-stealth-mode-startup--engineering-group-manager/D8.261
+https://www.comeet.com/jobs/team8/61.003/team8-stealth-mode-startup-ai-engineer/4F.269
+/jobs/syndio
+/jobs/forter
+https://job-boards.greenhouse.io/forter/jobs/8340517002
+https://job-boards.greenhouse.io/forter/jobs/8342392002
+https://job-boards.greenhouse.io/forter/jobs/8316004002
+/jobs/clickhouse
+https://job-boards.greenhouse.io/clickhouse/jobs/5733571004
+https://job-boards.greenhouse.io/clickhouse/jobs/5702514004
+https://job-boards.greenhouse.io/clickhouse/jobs/5719287004
+/jobs/canva
+/jobs/deepl
+/jobs/abridge
+/jobs/sila-nanotechnologies
+https://job-boards.greenhouse.io/silananotechnologies/jobs/7474073
+https://job-boards.greenhouse.io/silananotechnologies/jobs/7483018
+https://job-boards.greenhouse.io/silananotechnologies/jobs/7474075
+/jobs/glg
+https://glginsights.com/careers/jobs/7563150003?gh_jid=7563150003
+https://glginsights.com/careers/jobs/7572398003?gh_jid=7572398003
+https://glginsights.com/careers/jobs/7564948003?gh_jid=7564948003
+/jobs/unframe-ai
+https://job-boards.eu.greenhouse.io/unframe/jobs/4744936101
+https://job-boards.eu.greenhouse.io/unframe/jobs/4741952101
+https://job-boards.eu.greenhouse.io/unframe/jobs/4739155101
+/jobs/medibuddy
+https://medibuddy.hire.trakstar.com/jobs/fk0zf2r/
+https://medibuddy.hire.trakstar.com/jobs/fk0zfuk/
+https://medibuddy.hire.trakstar.com/jobs/fk0zfqb/
+/jobs/guild-education
+/jobs/axonius
+/jobs/curri
+/jobs/newfront
+[data-testid] 0
+.job 0
+.jobs 0
+li 32
+article 0
+div 592
