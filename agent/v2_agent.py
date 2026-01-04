@@ -22,7 +22,7 @@ FS_CONFIG = {
 }
 
 async def main():
-    prompt_path = Path(__file__).parent / "system_prompt_v2.md"
+    prompt_path = Path(__file__).parent / "system_prompt_v3.md"
     with open(prompt_path, 'r', encoding='utf-8') as f:
         system_prompt = f.read()
     # 1) MCP → LangChain tools
@@ -36,12 +36,15 @@ async def main():
     )
 
     # 3) Run it like a normal LangGraph agent
+    #job_board = "https://jobs.usv.com/jobs"
+    job_board = "https://jobs.bvp.com/jobs"
+    content_string = f"Extract all jobs from {job_board}"
     result = await agent.ainvoke(
         {
             "messages": [
                 {
                     "role": "user",
-                    "content": "Extract all jobs from https://jobs.usv.com/jobs"
+                    "content": content_string
                 }
             ]
         }

@@ -509,4 +509,3 @@ if __name__ == "__main__":
 - **Handle errors**: The web is messy - graceful degradation is key
 - **Verify your work**: Count jobs, inspect samples, validate data quality
 
-Good luck, and happy scraping! 🚀

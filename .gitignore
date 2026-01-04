@@ -3,3 +3,4 @@ agent/logs/*
 agent/workspace/*
 agent/jobs.jsonl
 agent/skills/examples/infinite_scroll_usv/__pycache__/*
+agent/tools/__pycache__/*

@@ -40,7 +40,7 @@ def run_python_script(script_file_name: str) -> str:
             [sys.executable, script_relative],
             capture_output=True,
             text=True,
-            timeout=120,
+            timeout=300,
             cwd=str(project_root),
             env=env
         )
